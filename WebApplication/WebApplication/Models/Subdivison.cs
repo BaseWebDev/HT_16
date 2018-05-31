@@ -1,5 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace WebApplication.Models {
     /// <summary>
@@ -7,6 +9,7 @@ namespace WebApplication.Models {
     /// </summary>
     public class Subdivison {
         public int Id { get; set; }
+        [DisplayName("Отдел")]
         [Required]
         /// <summary>
         /// Название отдела
