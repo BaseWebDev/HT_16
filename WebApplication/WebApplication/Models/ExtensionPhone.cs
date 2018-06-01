@@ -16,6 +16,7 @@ namespace WebApplication.Models {
         /// Внутренний номер
         /// </summary>
         public string Number { get; set; }
+        [DisplayName("Место установки")]
         /// <summary>
         /// Место установки
         /// </summary>

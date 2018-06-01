@@ -8,6 +8,7 @@ namespace WebApplication.Models {
     /// Отдел компании
     /// </summary>
     public class Subdivison {
+        [HiddenInput]
         public int Id { get; set; }
         [DisplayName("Отдел")]
         [Required]
