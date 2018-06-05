@@ -10,11 +10,11 @@ namespace WebApplication.Models {
     public class Subdivison {
         [HiddenInput]
         public int Id { get; set; }
-        [DisplayName("Отдел")]
-        [Required]
         /// <summary>
         /// Название отдела
         /// </summary>
+        [DisplayName("Отдел")]
+        [Required]
         public string Name { get; set; }
         [Required]
         public virtual Divison Divison { get; set; }

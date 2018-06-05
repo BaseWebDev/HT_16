@@ -10,27 +10,27 @@ namespace WebApplication.Models {
     public class Employee {
         [HiddenInput]
         public int Id { get; set; }
-        [Required]
-        [DisplayName("Фамилия")]
         /// <summary>
         /// Фамилия
         /// </summary>
-        public string LastName { get; set; }
         [Required]
-        [DisplayName("Имя")]
+        [DisplayName("Фамилия")]
+        public string LastName { get; set; }
         /// <summary>
         /// Имя
         /// </summary>
+        [Required]
+        [DisplayName("Имя")]
         public string FirstName { get; set; }
-        [DisplayName("Отчество")]
         /// <summary>
         /// Отчество
         /// </summary>
+        [DisplayName("Отчество")]
         public string MiddleName { get; set; }
-        [DisplayName("Домашний телефон")]
         /// <summary>
-        /// Домашний телефон, обычно личный номер, по которому сотрудника возможно найти в нерабочее время
+        /// Домашний телефон, обычно - личный номер, по которому сотрудника возможно найти в нерабочее время
         /// </summary>
+        [DisplayName("Домашний телефон")]
         public string NumberHomePhone { get; set; }
         [DisplayName("Должность")]
         [Required]

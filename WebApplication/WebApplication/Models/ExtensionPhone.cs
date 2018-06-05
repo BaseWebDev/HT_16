@@ -10,11 +10,11 @@ namespace WebApplication.Models {
     public class ExtensionPhone {
         [HiddenInput]
         public int Id { get; set; }
-        [DisplayName("Внутренний номер")]
-        [Required]
         /// <summary>
         /// Внутренний номер
         /// </summary>
+        [DisplayName("Внутренний номер")]
+        [Required]
         public string Number { get; set; }
         [DisplayName("Место установки")]
         /// <summary>

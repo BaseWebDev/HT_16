@@ -10,11 +10,11 @@ namespace WebApplication.Models {
     public class Position {
         [HiddenInput]
         public int Id { get; set; }
-        [Required]
-        [DisplayName("Должность")]
         /// <summary>
         /// Название должности
         /// </summary>
+        [Required]
+        [DisplayName("Должность")]
         public string Name { get; set; }
         [Required]
         public virtual Subdivison Subdivison { get; set; }
